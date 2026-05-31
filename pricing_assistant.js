@@ -1,0 +1,17 @@
+const productName = "Necklace";
+const costPerUnit = 10.50;
+const basePrice = 15.99;
+const discountRate = 0.15;
+const salesTaxRate = 0.07;
+const fixedMonthlyCosts = 950;
+const discountedPrice = basePrice*(1-discountRate);
+const finalPriceWithTax = discountedPrice*(1+salesTaxRate);
+const profitPerUnit = finalPriceWithTax - costPerUnit;
+const breakEvenUnits = Math.ceil(fixedMonthlyCosts/profitPerUnit);
+const isProfitablePerUnit = profitPerUnit>0;
+console.log("Product Name:", productName);
+console.log("Discounted Price:", discountedPrice.toFixed(2));
+console.log("Final Price with Tax:", finalPriceWithTax.toFixed(2));
+console.log("Profit Per Unit", profitPerUnit.toFixed(2));
+console.log("Break-Even Units:", breakEvenUnits);
+console.log("Profitable Per Unit", isProfitablePerUnit);
