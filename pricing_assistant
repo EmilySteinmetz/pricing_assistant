@@ -1,0 +1,6 @@
+let productName = " ";
+let costPerUnit = " ";
+let basePrice = " ";
+let discountRate = " ";
+let salesTaxRate = " ";
+let fixedMonthyCost = " ";
